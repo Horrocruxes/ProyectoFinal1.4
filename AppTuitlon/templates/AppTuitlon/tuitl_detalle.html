@@ -1,0 +1,30 @@
+
+
+
+<!-- Esta todavia no esta terminada, en para editar, habria que verla, esta igual al powerpoint -->
+
+
+{% extends "AppTuitlon/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+<head><title>Tuitl Detalle</title>
+</head>
+<body>
+
+
+   
+    <p><i>{{ tuitl.fecha }}
+        {{ tuitl.contenido }}{% if tuitl.imagen %}
+        <img src="{{tuitl.imagen.url}}">
+        {% endif %}<p></i></p>
+    <p><i></i></p>
+    <p>
+        <a href="{% url 'List' %}">Regresar</a>
+        <a href="{% url 'Delete' tuitl.id %}">Borrar</a> 
+    </p>
+
+    
+</body>
+{% endblock %}

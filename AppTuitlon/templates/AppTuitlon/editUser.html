@@ -1,0 +1,30 @@
+
+    
+{% extends "AppTuitlon/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+<body>    
+    <title>Edición de usuario</title>
+
+        {% if miForm.errors %}
+        <p style="color: red;"> ESTAN MAL LOS DATOS</p>
+        {% endif %}
+        
+        <form action="" method="POST"> {%csrf_token%}
+
+            <table>
+    
+                {{miForm.as_table}}
+    
+            </table>
+    
+            <input type="submit", value="Enviar", style="color:red">
+    
+        </form>
+
+
+    </body>
+
+{% endblock %}

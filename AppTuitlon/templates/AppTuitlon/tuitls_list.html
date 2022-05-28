@@ -1,0 +1,34 @@
+
+
+
+<!-- Esta todavia no esta terminada, en para editar, habria que verla, esta igual al powerpoint -->
+
+
+{% extends "AppTuitlon/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+    <title>Tuitls de Tuitlon - Python</title>
+    <ul>
+        {% for tuitl in tuitl_list %}
+
+            <li>
+                <p>{{ tuitl.fecha }}
+                    {{ tuitl.contenido }}</p> 
+                    {% if tuitl.imagen %}
+                    <img src="{{tuitl.imagen.url}}">
+                    {% endif %}<p> 
+                    <a href="{% url 'Detail' tuitl.id %}">Ver</a>
+                    
+                
+                </p> 
+            </li>
+
+        {% endfor %}
+    </ul>
+
+   
+    </from>
+    {% endblock %}

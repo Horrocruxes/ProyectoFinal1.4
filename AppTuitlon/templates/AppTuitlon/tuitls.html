@@ -1,0 +1,39 @@
+
+
+
+
+<!-- Esto es para subir tuitls -->
+
+
+
+{% extends "AppTuitlon/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+    {% if miForm.errors %}
+
+    <div>
+        <p style="color: red;"> Estan mal los datos, revisar </p>
+
+    {% endif %}
+
+    <h1>Tuitls - Agregar Tuitl</h1>
+
+    {% if miForm.errors %}
+    <p style="color: red;"> ESTAN MAL LOS DATOS</p>
+    {% endif %}
+    
+    <form action="" enctype="multipart/form-data" method="POST"> {% csrf_token %}
+        
+        <p class="w3-input w3-padding-16"><table>
+
+            {{ miForm.as_table }}
+
+        </table></p>
+
+        <input type="submit" value="Enviar">
+    </form>
+    <a href="{% url 'List' %}">Ver tuitls</a>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "AppTuitlon/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+<head><title>Tuitl formulario</title>
+</head>
+<body class="w3-black">
+
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Enviar" />
+    </form>
+
+
+    
+</body>
+{% endblock %}

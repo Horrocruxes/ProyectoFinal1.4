@@ -1,0 +1,33 @@
+
+
+
+<!-- Formulario para cargar tuit -->
+
+
+
+{% extends "AppTuitlon/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+    <body>    
+    <title>Tuitls - Agregar Tuitl</title>
+
+        {% if miForm.errors %}
+        <p style="color: red;"> ESTAN MAL LOS DATOS</p>
+        {% endif %}
+        
+        <form action="" method="POST"> {% csrf_token %}
+            
+            <input>
+
+                {{ miForm.as_table }}
+
+        </input>
+
+            <input type="submit" value="Ok">
+        </form>
+
+
+    </body>
+    {% endblock %}

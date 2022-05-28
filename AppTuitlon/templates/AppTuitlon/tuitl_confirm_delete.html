@@ -1,0 +1,27 @@
+
+
+
+
+
+<!-- Esta todavia no esta terminada, en para editar, habria que verla, esta igual al powerpoint -->
+
+
+{% extends "AppTuitlon/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+<head><title>Tuitl Borrar</title>
+</head>
+<body>
+
+
+    <form method="post">{% csrf_token %}
+        ¿Estás seguro que deseas borrar el tuitl "{{ tuitl }}"?
+        <input type="submit" value="Borrar" />
+        <a href="{% url 'List' %}">Regresar</a>
+    </form>
+
+    
+</body>
+{% endblock %}

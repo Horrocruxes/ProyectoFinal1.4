@@ -1,0 +1,18 @@
+{% extends "AppTuitlon/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+<p>Acá agregamos imágenes.</p>
+
+<form action="" method="POST" > {%csrf_token%}
+
+        {{form.as_p}}
+
+
+
+    <input type="submit", value="Subir Imagen", style="color:red">
+
+
+</form>
+{% endblock %}

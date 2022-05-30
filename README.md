@@ -13,5 +13,5 @@ Tuitlon es un proyecto en desarrollo de una red social, en la que los internauta
 
 1 - Ingresar a http://127.0.0.1:8000/admin/l
 2 - Iniciar sesión con el siguiente username y contraseña:
-- Superuser:
-- Contraseña: 
+- Superuser:andreygonza
+- Contraseña: Coder1234!

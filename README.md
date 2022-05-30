@@ -1,4 +1,4 @@
-# ProyectoFinal
+# ProyectoFinal de Gonzalo J. Aguinagalde y Andrea V. Márquez C.
 
 Tuitlon es un proyecto en desarrollo de una red social, en la que los internautas intercambian información personal y contenidos multimedia. A traves de Tuitlon se crean relacione de forma rápida. 
 
